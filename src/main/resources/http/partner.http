@@ -1,0 +1,40 @@
+### create
+POST localhost:8080/partner/create
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+Content-Type: application/json
+
+{
+  "nameUz": "hjac uwcqw iadusb",
+  "nameRu": "цшгауц шцугац шцуг",
+  "nameEn": "whd iwu iwu weid2wc",
+  "attachId": "fe9d7fbf-4878-4f6e-9af4-43fd6b1aed55",
+  "link": " quwhd wuqwd qiwdub"
+}
+### update
+PUT localhost:8080/partner/update?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+Content-Type: application/json
+
+{
+  "nameUz": "hjac uwcqw iadusb",
+  "nameRu": "adsbdfnhgmjjewfeds t t2wqdf",
+  "nameEn": "whd iwu iwu weid2wc",
+  "link": "http// quwhd wuqwd qiwdub wd12 qwed2 edqwd qwe d1qw e"
+}
+### update attach partner
+PUT localhost:8080/partner/update/attach?attachId=291073d8-da86-48ee-b4ea-80bc9975f604&id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+
+### delete  partner
+DELETE localhost:8080/partner/delete?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+
+### no delete  partner
+PUT localhost:8080/partner/noDelete?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+
+### more  partner
+GET localhost:8080/partner/more?lang=ru
+
+### byId  partner
+GET localhost:8080/partner/byId?lang=ru&id=1

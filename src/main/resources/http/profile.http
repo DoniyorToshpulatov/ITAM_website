@@ -1,0 +1,73 @@
+### registration admin
+POST localhost:8080/auth/registration
+Content-Type: application/json
+
+{
+  "nameUz": "Adminbek",
+  "nameRu": "Adminbek",
+  "nameEn": "Adminbek",
+  "surnameUz": "Adminbek",
+  "surnameRu": "Adminbek",
+  "surnameEn": "Adminbek",
+  "email": "admin@gmail.com",
+  "password": "adminroot",
+  "jobUz": "ADMIN",
+  "jobRu": "ADMIN",
+  "jobEn": "ADMIN",
+  "role": "ADMIN",
+  "workRole": "employee",
+  "deportmentId": 1,
+  "imageId":"b69be755-97de-45e1-b3cf-65fa6cc8ea14"
+}
+### registration
+POST localhost:8080/auth/registration
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODUzMzc1MDMsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODU1OTY3MDMsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.OjO6HdDaE4v4P5oru7yUZtlVgUBUOfFWOCCHOlGTIx4SmtojyE-TUGo-aPlCdCmp_Oi9IYyjSCTzy_Q-1wATJg
+Content-Type: application/json
+
+{
+  "nameUz": "Maxmud",
+  "nameRu": "Махмуд",
+  "nameEn": "Makhmud",
+  "surnameUz": "Maxmudov",
+  "surnameRu": "Махмудов",
+  "surnameEn": "Makhmudov",
+  "email": "maxmud@gmail.com",
+  "password": "maxmud123",
+  "jobUz": "Yetakchi mutaxasis",
+  "jobRu": "Ведущий специалист",
+  "jobEn": "leading specialist",
+  "role": "USER",
+  "imageId":"86521c2e-92ab-45f1-bdb0-766a58d9aad1",
+  "workRole": "EMPLOYEE"
+}
+### login
+POST localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "admin123"
+}
+
+### update
+PUT localhost:8080/profile/update
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQzOTA2NTIsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ2NDk4NTIsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.Rnk1KhW6hiSRnEVl_6Bc7oinmhAj9OuxQtPrRckQ9EoIQLQQ0fqAdK8sYlf05oeWOw_7aphIykyb8NDeu0ue9Q
+Content-Type: application/json
+
+{
+  "id":11,
+  "nameUz":"Maxmudbek",
+  "nameEn":"Maxmudbek",
+  "nameRu": "Махмудбек",
+  "surnameUz": "Salohiddinov",
+  "surnameEn": "Salokhiddinov",
+  "imageId": "00afc54e-6c60-4317-a536-ec07100bdbce"
+  }
+### update profile attach id
+PUT localhost:8080/profile/update/attach?attachId=a100636a-9672-467b-8a9d-b08ba4a77d09&id=11
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQzOTA2NTIsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ2NDk4NTIsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.Rnk1KhW6hiSRnEVl_6Bc7oinmhAj9OuxQtPrRckQ9EoIQLQQ0fqAdK8sYlf05oeWOw_7aphIykyb8NDeu0ue9Q
+### get byId
+GET localhost:8080/profile/byId?lang=uz&id=2
+
+
+

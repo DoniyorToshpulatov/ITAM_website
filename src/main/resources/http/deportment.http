@@ -1,0 +1,61 @@
+### create deportment
+POST localhost:8080/deportment/create
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA
+Content-Type: application/json
+
+{
+  "nameUz": "gfhsvdcjwke ywfetgwhj",
+  "nameRu": "нцеспнм3риут цгпумсцгуфицщтлц2",
+  "nameEn": "fsgdvcwei whcwuebc iuhbvwievb",
+  "taskUz": "sgvdchsbdjnckmx scvwuesdbinc",
+  "taskRu": "вушгмну7 гуна3у8кимы гцунмамцуниа",
+  "taskEn": "wdcygwvuhbjkm uwyefwbjen",
+  "statuteUz": "tysdcvwue wuevwuef",
+  "statuteRu": "цпумашрщлод цгнуцгруолб",
+  "statuteEn": "sfgcbwu uwyevwue weyfvuw",
+  "purposeUz": "scfsgcvhbjnkml wysetgwhbjsnk",
+  "purposeRu": "цнуевцапйцгрйочлщ рмуагишц",
+  "purposeEn": "wgvdhcbiwjnokeml,; vwefwvuehbcj",
+  "resultUz": "wjgvcw wiecubwe uwyecw",
+  "resultRu": "евацгнури цнапцуа",
+  "resultEn": "sydtcsvecb wcbwbesc ",
+  "profileId": 2,
+  "attachId": "291073d8-da86-48ee-b4ea-80bc9975f604"
+}
+### update deportment
+PUT localhost:8080/deportment/update?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA
+Content-Type: application/json
+
+{
+  "nameUz": "gfhsvdcjwke ywfetgwhj",
+  "nameRu": "цмуцфывйца цфацуас",
+  "nameEn": "fsgdvcwei whcwuebc iuhbvwievbwgengbfdw 4etbgg3wcrvgty5hc14e `",
+  "taskUz": "sgvdchsbdjnckmx scvwuesdbinc",
+  "taskRu": "цвауцау цвцвц 2йцвйцв",
+  "taskEn": "wdcygwvuhbjkm uwyefwbjen",
+  "statuteUz": "tysdcvwue wuevwuef",
+  "statuteRu": "в2ц уацуа йцвцсувы2",
+  "statuteEn": "sfgcbwu uwyevwue weyfvuw",
+  "purposeUz": "scfsgcvhbjnkml wysetgwhbjsnk",
+  "purposeRu": "ца2цу а 2цвсцуа 2в2цвсцу",
+  "purposeEn": "wgvdhcbiwjnokeml,; vwefwvuehbcj",
+  "resultUz": "wjgvcw wiecubwe uwyecw",
+  "profileId": 11
+}
+
+### update deportment is attach
+PUT localhost:8080/deportment/update/attach?attachId=fe9d7fbf-4878-4f6e-9af4-43fd6b1aed55&id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA
+
+### delete deportment
+DELETE localhost:8080/deportment/delete?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA
+
+###   delete buganni tiklash deportment
+PUT localhost:8080/deportment/noDelete?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA
+
+###   deportment more
+GET localhost:8080/deportment/more?lang=ru
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA

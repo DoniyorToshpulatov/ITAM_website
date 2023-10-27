@@ -1,0 +1,38 @@
+### create digest
+POST localhost:8080/digest/create
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+Content-Type: application/json
+
+{
+  "nameUz": "cgvs ahscb syvcbas",
+  "nameRu": "scusy shcs huszhc",
+  "nameEn": "sacw qwdqwd qwdqw",
+  "attachId": "890c91b5-95e7-4e2b-b91f-47d22ad67a27",
+  "categoryId": 1
+}
+### upate digest
+PUT localhost:8080/digest/update?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+Content-Type: application/json
+
+{
+  "nameUz": "cgvs ahscb syvcbas",
+  "nameRu": "высицу цггисф шфыосицы",
+  "nameEn": "sвнймцви цйрвфи йгцрфви чфещ",
+  "categoryId": 1
+}
+### update attach file
+PUT localhost:8080/digest/update/attach?attachId=b69be755-97de-45e1-b3cf-65fa6cc8ea14&id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+
+### delete
+DELETE localhost:8080/digest/delete?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+
+
+### no delete
+PUT localhost:8080/digest/noDelete?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+
+### more by  categoryId
+GET localhost:8080/digest/more/categoryId?lang=ru&categoryId=1

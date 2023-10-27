@@ -1,0 +1,55 @@
+### create result
+POST localhost:8080/result/create
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+Content-Type: application/json
+
+{
+  "attachId": "00afc54e-6c60-4317-a536-ec07100bdbce",
+  "nameUz": "sudtcwuyceb iweucbwc",
+  "nameRu": "иу цшуагицу шцугаицуа ицуаг",
+  "nameEn": "scd woidnc iwenc iwecn",
+  "titleUz": "gsc iwudbcw wue cw",
+  "titleRu": "гнаиц цгу шцуо цшуатуа",
+  "titleEn": "sycdbw wijcn idcjnkw",
+  "descriptionUz": "wuyceb wieuwce",
+  "descriptionRu": "цырвсмц ыоврсиц ыоврсгмц",
+  "descriptionEn": "wuyceb wieuwce",
+  "createdDate": "2023-01-15"
+}
+### update
+PUT localhost:8080/result/update?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+Content-Type: application/json
+
+{
+  "nameUz": "sudtcwuyceb iweucbwc",
+  "nameRu": "иу цшуагицу шцугаицуа ицуаг",
+  "nameEn": "scd woidnc iwenc iwecn",
+  "titleUz": "gsc iwudbcw wue cw",
+  "titleRu": "гнаиц цгу шцуо цшуатуа",
+  "titleEn": "sycdbw wijcn idcjnkw",
+  "descriptionUz": "wuyceb wieuwce",
+  "descriptionRu": "цырвсмц ыоврсиц ыоврсгмц",
+  "descriptionEn": "wuyceb wieuwce",
+  "createdDate": "2023-02-18"
+}
+### update attach
+PUT localhost:8080/result/update/attach?attachId=fe9d7fbf-4878-4f6e-9af4-43fd6b1aed55&id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+
+### delete
+DELETE localhost:8080/result/delete?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+
+### noo delete
+PUT localhost:8080/result/noDelete?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+
+### top 3 result
+GET localhost:8080/result/top?lang=ru
+
+### more
+GET localhost:8080/result/more?lang=ru&page=0&size=1
+
+### byid
+GET localhost:8080/result/byId?lang=ru&id=1

@@ -1,0 +1,52 @@
+### news create
+POST localhost:8080/news/create
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODU2Mzk1ODcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODU4OTg3ODcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.xt241kD3sugNWNdX-YINTuLYa7_CvFXjvPKNNgU6B1UkWxrLlA2yAt4NJdrb5r68IMYMCEZ55R_7THUos8zUdg
+Content-Type: application/json
+
+{
+"attachId": "7bcdba26-bf93-4b3d-8be1-2b269f423f83",
+  "nameUz": "uzdaececewef  ",
+  "nameRu": "ывпарьолрртпку укенгьнртпаивы вцаупкыервоналгдшщжг",
+  "nameEn": "enwfwefwefwefedd3ded3d3d",
+  "longUz": "shbdicasfwefwefw",
+  "longRu": "цкпеырвнеоаглшднщ керквнеоагпгшдршщг аыавпарвол",
+  "longEn": "shdvciwbjwefwefwe",
+  "createdDate": "2023-05-23"
+}
+
+### news update
+PUT localhost:8080/news/update?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+Content-Type: application/json
+
+{
+  "nameUz": "uzdae cecewef",
+  "nameRu": "ыцумукмикетьн  ЦВАЫУАЦУА йфыпвраопрло цукенвгш",
+  "nameEn": "enwfwef   wefwefedd3ded3d3d",
+  "longUz": "shbdicas    fwefwefw йцуфкыеноглш   цукернополролл",
+  "longRu": "РЫФМУАГВИШО ГЫНПВГРАШОЩЛ ыфвппраывпаробплд",
+  "longEn": "shdvciwbjw    efwefwe",
+  "createdDate": "2023-01-05"
+}
+
+### news update attach id
+PUT localhost:8080/news/update/attach?attachId=4e96fcd9-2b0c-434c-baa0-e845612ef10e&id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA
+
+### news delete
+DELETE localhost:8080/news/delete?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA
+
+### newsni eng sungi 3 tasi
+GET localhost:8080/news/top3?lang=en
+
+### newsni more
+GET localhost:8080/news/more?lang=en
+
+### newsni more admin
+GET localhost:8080/news/more/admin
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA
+
+### delete bulgan newsni qaytrish
+PUT localhost:8080/news/noDelete?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA

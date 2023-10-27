@@ -1,0 +1,22 @@
+### Create Attach (upload)
+POST http://localhost:8080/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="doniyor.jpg"
+
+< C:\Users\user\Desktop\doniyor.jpg
+
+###  Get Attach By Id (load)
+GET http://localhost:8080/attach/load?fileName=b69be755-97de-45e1-b3cf-65fa6cc8ea14
+
+###  Get Attach By Id (Open)
+GET http://localhost:8080/attach/open/b69be755-97de-45e1-b3cf-65fa6cc8ea14
+
+### Pagination admin
+GET http://localhost:8080/attach/list/admin?page=0&size=2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og
+
+### delete
+DELETE http://localhost:8080/attach/delete/291073d8-da86-48ee-b4ea-80bc9975f604
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ3MDk0MDcsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5Njg2MDcsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.XV0aOKinEvLaBdt9zLSRge_zeVa2m1MBNBs8t11tVUew6E0xr4lo_SVL3JiJp6-IxgD3cLVl_nOOPQXTpHP-Og

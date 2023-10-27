@@ -1,0 +1,37 @@
+### create category
+POST localhost:8080/category/create
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA
+Content-Type: application/json
+
+{
+  "attachId": "fe9d7fbf-4878-4f6e-9af4-43fd6b1aed55",
+  "nameUz": "hcwy iausb iuabciq iuabscibaw",
+  "nameRu": "грфмвсйцн гцницуцшуаги шцугаисц шгцуыисц",
+  "nameEn": "ascva aucsyhae biasucdb uayescvb"
+}
+### update category
+PUT localhost:8080/category/update?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA
+Content-Type: application/json
+
+{
+  "attachId": "291073d8-da86-48ee-b4ea-80bc9975f604",
+  "nameUz": "hcwy iausb iuabciq iuabscibaw",
+  "nameRu": "ыпвй гйынвмфц гйцвйцф гйцнфв",
+  "nameEn": "ascva aucsyhae biasucdb uayescvb"
+}
+
+### update category attach
+PUT localhost:8080/category/update/attach?attachId=b69be755-97de-45e1-b3cf-65fa6cc8ea14&id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA
+
+### delete category
+DELETE localhost:8080/category/delete?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA
+
+### delete category
+PUT localhost:8080/category/noDelete?id=1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2ODQ2NDEzNTEsInVzZXJuYW1lIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE2ODQ5MDA1NTEsImlzcyI6Imt1bnV6IHRlc3QgcG9ydGFsaSJ9.7SHxWogSTmDrck3wxLe2dtfEi1g9WtlJQfon0WhxjyrJsWLG_YYJb55oPTEnwKKCjntS7suBPak70FHxIPvxCA
+
+### more category
+GET localhost:8080/category/more?lang=ru
